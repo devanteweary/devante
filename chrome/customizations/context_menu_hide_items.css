@@ -1,0 +1,25 @@
+
+
+/* **************************************** */
+/*    										*/
+/*	 	HIDE ITEMS IN CONTEXT MENU			*/
+/*    										*/
+/* **************************************** */
+
+    /*  Find IDs by browsing to:
+        view-source:chrome://browser/content/browser.xhtml      */
+
+
+    #context-sendimage,
+    #context-inspect,
+    #context-savepage,
+    #context-selectall,
+    #context-take-screenshot,
+    #context-viewsource,
+    #context-print-selection,
+    #context-viewpartialsource-selection,
+    #context-sep-setbackground,
+    #context-setDesktopBackground,
+    #context-inspect-a11y,
+    
+    {display: none !important;}

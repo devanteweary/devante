@@ -1,0 +1,7 @@
+@-moz-document url("about:newtab") {
+body { background-color: #131313 !important;}
+}
+
+@-moz-document url(chrome://browser/content/browser.xul) {
+browser[type="content-primary"] {background: #131313 !important}
+}

@@ -1,0 +1,45 @@
+
+
+    		/* **************************************** */
+    		/*    										*/
+    		/*	 	HIDE SECURITY ICONS IN URL BAR		*/
+    		/*    										*/
+    		/* **************************************** */
+
+
+
+
+
+            #urlbar-input-container[pageproxystate="valid"] :is(
+
+    			#tracking-protection-icon-container,			/* Shield		 	*/
+    			#identity-icon-box.identity-box-button,			/* Lock			 	*/
+    			#permissions-granted-icon,						/* Permissions 		*/
+    			#blocked-permissions-container,					/* Notifications 	*/
+
+    															) { display: none; }
+
+
+
+
+    /*	Put padding in the URL bar.
+    	---------------------------
+
+    	#urlbar-input-container[pageproxystate="valid"] #identity-box:not(.chromeUI, .extensionPage) ~ .urlbar-input-box { padding-inline-start: 5px; }
+
+
+
+    	Elements
+    	--------
+
+    	#identity-box							=	Entire permissions/notifications/etc. box.
+
+    	#identity-box.verifiedDomain			=	Where the favicon and permissions box went?
+
+    	#tracking-protection-icon-container		=	Shield
+    	#identity-icon-box.identity-box-button	=	Lock
+    	#permissions-granted-icon				=	Permissions
+    	#blocked-permissions-container			=	Notifications
+
+
+    	*/

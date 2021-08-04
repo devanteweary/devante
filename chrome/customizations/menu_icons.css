@@ -1,0 +1,350 @@
+
+
+/* **************************************** */
+/*    								                  		*/
+/*	 			MENU ITEM ICONS		            		*/
+/*    					                   					*/
+/*		https://pastebin.com/9iWibe77		      */
+/*    									                   	*/
+/* **************************************** */
+
+
+	.subviewbutton:not(.subviewbutton-iconic, .subviewbutton-back, [checked="true"]) > .toolbarbutton-icon {
+  width: 16px;
+  height: 16px;
+  margin-inline-end: 8px !important;
+}
+.subviewbutton {
+  -moz-context-properties: fill;
+  fill: currentColor;
+}
+#appMenu-zoom-controls2 > .toolbarbutton-text {
+  margin-inline-start: 24px !important;
+}
+#appMenu-new-tab-button2 {
+  list-style-image: url("chrome://browser/skin/new-tab.svg");
+}
+#appMenu-new-window-button2,
+#appMenuRecentlyClosedWindows {
+  list-style-image: url("chrome://browser/skin/window.svg");
+}
+#appMenu-new-private-window-button2 {
+  list-style-image: url("chrome://browser/skin/privateBrowsing.svg");
+}
+#appMenu-bookmarks-button,
+#panelMenuBookmarkThisPage[starred],
+#appMenu-library-bookmarks-button,
+#sidebar-switcher-bookmarks {
+  list-style-image: url("chrome://browser/skin/bookmark.svg");
+}
+#appMenu-history-button,
+#appMenu-library-history-button,
+#sidebar-switcher-history {
+  list-style-image: url("chrome://browser/skin/history.svg");
+}
+#appMenu-downloads-button,
+#appMenu-library-downloads-button {
+  list-style-image: url("chrome://browser/skin/downloads/downloads.svg");
+}
+#appMenu-passwords-button {
+  list-style-image: url("chrome://browser/skin/login.svg");
+}
+#appMenu-extensions-themes-button {
+  list-style-image: url("chrome://mozapps/skin/extensions/extension.svg");
+}
+#appMenu-print-button2 {
+  list-style-image: url("chrome://global/skin/icons/print.svg");
+}
+#appMenu-save-file-button2 {
+  list-style-image: url("chrome://browser/skin/save.svg");
+}
+#appMenu-find-button2,
+#panelMenu_searchBookmarks {
+  list-style-image: url("chrome://global/skin/icons/search-glass.svg");
+}
+#appMenu-settings-button {
+  list-style-image: url("chrome://global/skin/icons/settings.svg");
+}
+#appMenu-help-button2 {
+  list-style-image: url("chrome://global/skin/icons/help.svg");
+}
+#appMenu-quit-button2 {
+  list-style-image: url("chrome://browser/skin/quit.svg");
+}
+#panelMenuBookmarkThisPage {
+  list-style-image: url("chrome://browser/skin/bookmark-hollow.svg");
+}
+:is(toolbarbutton, menuitem)[id$="_viewBookmarksToolbar"] {
+  list-style-image: url("chrome://browser/skin/bookmarks-toolbar.svg") !important;
+}
+#appMenuRecentlyClosedTabs,
+#sidebar-switcher-tabs {
+  list-style-image: url("chrome://browser/skin/tab.svg");
+}
+#appMenuRestoreSession {
+  list-style-image: url("chrome://browser/skin/restore-session.svg");
+}
+#appMenuClearRecentHistory {
+  list-style-image: url("chrome://browser/skin/forget.svg");
+}
+#appmenu-moreTools-button,
+#overflowMenu-customize-button {
+  list-style-image: url("chrome://browser/skin/customize.svg");
+}
+#appmenu-developer-tools-view > [oncommand="switchToTabHavingURI('about:performance', true)"] {
+  list-style-image: url("chrome://global/skin/icons/performance.svg");
+}
+#sidebar-reverse-position[label="Move Sidebar to Right"] {
+  list-style-image: url("chrome://browser/skin/sidebars-right.svg");
+}
+#sidebar-reverse-position[label="Move Sidebar to Left"],
+#BMB_viewBookmarksSidebar {
+  list-style-image: url("chrome://browser/skin/sidebars.svg") !important;
+}
+#sidebarMenu-popup [data-l10n-id="sidebar-menu-close"] {
+  list-style-image: url("chrome://global/skin/icons/close.svg");
+}
+#fxa-menu-avatar {
+  display: unset;
+  -moz-box-ordinal-group: 2;
+}
+#fxa-manage-account-button vbox {
+  margin-inline-start: 24px;
+}
+.syncNowBtn {
+  visibility: visible !important;
+  -moz-box-ordinal-group: 0 !important;
+  margin-inline-end: 8px;
+}
+#PanelUI-fxa-menu-setup-sync-button {
+  list-style-image: url("chrome://browser/skin/sync.svg");
+}
+#PanelUI-fxa-menu-sendtab-button {
+  list-style-image: url("chrome://browser/skin/send-to-device.svg");
+}
+#PanelUI-fxa-menu-account-signout-button {
+  list-style-image: url("chrome://browser/skin/sign-out.svg");
+}
+#appMenu-fxa-label2::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-inline-end: 8px;
+  border-radius: 50%;
+  background: var(--avatar-image-url) no-repeat center/16px;
+}
+
+menupopup > :is(menu:not(.menu-iconic), menuitem:not(.menuitem-iconic, [checked="true"])) {
+  padding-inline-start: calc(1em + 24px) !important;
+  background-position: left 1em center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  -moz-context-properties: fill;
+  fill: currentColor;
+}
+menuitem[data-l10n-id$="-new-tab"]:not([data-l10n-id$="-open-link-new-tab"], [data-l10n-id$="-view-new-tab"]) {
+  background-image: url("chrome://browser/skin/new-tab.svg");
+}
+#menu_newNavigator,
+#historyUndoWindowMenu {
+  background-image: url("chrome://browser/skin/window.svg");
+}
+menuitem[data-l10n-id$="-private-window"] {
+  background-image: url("chrome://browser/skin/privateBrowsing.svg");
+}
+#menu_openFile {
+  background-image: url("chrome://browser/skin/open.svg");
+}
+#menu_savePage,
+#context-savepage {
+  background-image: url("chrome://browser/skin/save.svg");
+}
+menuitem[data-l10n-id*="-email"] {
+  background-image: url("chrome://browser/skin/mail.svg");
+}
+menuitem[data-l10n-id*="-print"] {
+  background-image: url("chrome://global/skin/icons/print.svg");
+}
+#menu_importFromAnotherBrowser,
+#browserImport {
+  background-image: url("chrome://browser/skin/import.svg");
+}
+#menu_FileQuitItem {
+  background-image: url("chrome://browser/skin/quit.svg");
+}
+menuitem[data-l10n-id="text-action-undo"],
+menuitem[data-l10n-id$="-reopen-closed-tabs"] {
+  background-image: url("chrome://global/skin/icons/undo.svg");
+}
+menuitem[data-l10n-id="text-action-cut"] {
+  background-image: url("chrome://browser/skin/edit-cut.svg");
+}
+menuitem[data-l10n-id="text-action-copy"] {
+  background-image: url("chrome://browser/skin/edit-copy.svg");
+}
+menuitem[data-l10n-id="text-action-paste"] {
+  background-image: url("chrome://browser/skin/edit-paste.svg");
+}
+menuitem[data-l10n-id="text-action-delete"],
+#placesContext_deleteBookmark,
+#placesContext_delete_history,
+menuitem[data-l10n-id="toolbar-context-menu-remove-from-toolbar"] {
+  background-image: url("chrome://global/skin/icons/delete.svg");
+}
+#menu_find,
+#context-searchselect {
+  background-image: url("chrome://global/skin/icons/search-glass.svg");
+}
+#context-searchselect[label^="Search Google"] {
+  background-image: url("chrome://activity-stream/content/data/content/tippytop/favicons/google-com.ico");
+}
+#context-searchselect[label^="Search DuckDuckGo"] {
+  background-image: url("chrome://activity-stream/content/data/content/tippytop/favicons/duckduckgo-com.ico");
+}
+#viewSidebarMenuMenu {
+  background-image: url("chrome://browser/skin/sidebars.svg");
+}
+#menu_zoomEnlarge {
+  background-image: url("chrome://browser/skin/zoom-in.svg");
+}
+#menu_zoomReduce {
+  background-image: url("chrome://browser/skin/zoom-out.svg");
+}
+#charsetMenu {
+  background-image: url("chrome://browser/skin/characterEncoding.svg");
+}
+#fullScreenItem {
+  background-image: url("chrome://browser/skin/fullscreen.svg");
+}
+#sanitizeItem,
+#placesContext_deleteHost {
+  background-image: url("chrome://browser/skin/forget.svg");
+}
+#historyRestoreLastSession {
+  background-image: url("chrome://browser/skin/restore-session.svg");
+}
+#historyUndoMenu {
+  background-image: url("chrome://browser/skin/tab.svg");
+}
+menuitem[data-l10n-id*="bookmark-"]:not([data-l10n-id$="-edit"], [data-l10n-id$="-shortcut"]),
+#placesContext_createBookmark {
+  background-image: url("chrome://browser/skin/bookmark-hollow.svg");
+}
+menuitem[data-l10n-id="menu-bookmark-edit"] {
+  background-image: url("chrome://browser/skin/bookmark.svg");
+}
+#menu_openDownloads {
+  background-image: url("chrome://browser/skin/downloads/downloads.svg");
+}
+#menu_openAddons {
+  background-image: url("chrome://mozapps/skin/extensions/extension.svg");
+}
+#sync-syncnowitem {
+  background-image: url("chrome://browser/skin/sync.svg");
+}
+#webDeveloperMenu {
+  background-image: url("chrome://browser/skin/developer.svg");
+}
+#menu_taskManager {
+  background-image: url("chrome://global/skin/icons/performance.svg");
+}
+#menu_pageInfo {
+  background-image: url("chrome://global/skin/icons/info.svg");
+}
+#menu_preferences {
+  background-image: url("chrome://global/skin/icons/settings.svg");
+}
+#context-sendpagetodevice,
+#context-sendlinktodevice,
+#context_sendTabToDevice {
+  background-image: url("chrome://browser/skin/send-to-device.svg");
+}
+:is(#context-sendpagetodevice-popup, #context-sendlinktodevice-popup, #context_sendTabToDevicePopupMenu) > [clientType="desktop"] {
+  background-image: url("chrome://browser/skin/device-desktop.svg");
+}
+:is(#context-sendpagetodevice-popup, #context-sendlinktodevice-popup, #context_sendTabToDevicePopupMenu) > [clientType="phone"] {
+  background-image: url("chrome://browser/skin/device-phone.svg");
+}
+:is(#context-sendpagetodevice-popup, #context-sendlinktodevice-popup, #context_sendTabToDevicePopupMenu) > [clientType="tablet"] {
+  background-image: url("chrome://browser/skin/device-tablet.svg");
+}
+:is(#context-sendpagetodevice-popup, #context-sendlinktodevice-popup, #context_sendTabToDevicePopupMenu) > [clientType="tv"] {
+  background-image: url("chrome://browser/skin/device-tv.svg");
+}
+:is(#context-sendpagetodevice-popup, #context-sendlinktodevice-popup, #context_sendTabToDevicePopupMenu) > [clientType="vr"] {
+  background-image: url("chrome://browser/skin/device-vr.svg");
+}
+menuitem[data-l10n-id*="reload-"] {
+  background-image: url("chrome://browser/skin/reload.svg");
+}
+#context_toggleMuteTab:not([soundplaying], [muted]),
+#context_toggleMuteTab[soundplaying]:not([muted]),
+#context-media-mute {
+  background-image: url("chrome://global/skin/media/audio-muted.svg");
+}
+#context_toggleMuteTab[muted],
+#context-media-unmute {
+  background-image: url("chrome://global/skin/media/audio.svg");
+}
+#context_pinTab,
+.customize-context-moveToPanel {
+  background-image: url("chrome://activity-stream/content/data/content/assets/glyph-pin-16.svg");
+}
+#context_unpinTab,
+#customizationPanelItemContextMenuUnpin {
+  background-image: url("chrome://activity-stream/content/data/content/assets/glyph-unpin-16.svg");
+}
+#context_closeTab,
+#orgClose {
+  background-image: url("chrome://global/skin/icons/close.svg");
+}
+#context-pocket,
+#context-savelinktopocket {
+  background-image: url("chrome://browser/skin/pocket-outline.svg");
+}
+#context-take-screenshot {
+  background-image: url("chrome://browser/skin/screenshot.svg");
+}
+#context-inspect-a11y {
+  background-image: url("chrome://devtools/skin/images/tool-accessibility.svg");
+}
+#context-inspect {
+  background-image: url("chrome://devtools/skin/images/command-pick.svg");
+}
+#paste-and-go {
+  background-image: url("chrome://browser/skin/forward.svg");
+}
+#toggle_PersonalToolbar {
+  background-image: url("chrome://browser/skin/bookmarks-toolbar.svg");
+}
+menuitem[data-l10n-id*="-customize-toolbar"] {
+  background-image: url("chrome://browser/skin/customize.svg");
+}
+menuitem[data-l10n-id="full-screen-exit"] {
+  background-image: url("chrome://browser/skin/fullscreen-exit.svg");
+}
+menuitem[data-l10n-id="places-edit-bookmark"] {
+  background-image: url("chrome://global/skin/icons/edit.svg");
+}
+#context-media-play {
+  background-image: url("chrome://global/skin/media/play-fill.svg");
+}
+#context-media-pause {
+  background-image: url("chrome://global/skin/media/pause-fill.svg");
+}
+#context-video-fullscreen {
+  background-image: url("chrome://global/skin/media/fullscreenEnterButton.svg");
+}
+#context-leave-dom-fullscreen {
+  background-image: url("chrome://global/skin/media/fullscreenExitButton.svg");
+}
+#BMB_bookmarksPopup .subviewbutton > .menu-iconic-left {
+  margin-inline-end: 8px !important;
+}
+#BMB_bookmarksShowAll {
+  padding-inline-start: calc(1em + 20px) !important;
+}
+#BMB_bookmarksPopup .openintabs-menuitem .menu-text {
+  margin-inline-start: -4px !important;
+}
